@@ -1,6 +1,6 @@
 package shape;
 
-public  abstract class Shape {
+public  abstract class Shape implements Visible{
 
 	private String color;
 	

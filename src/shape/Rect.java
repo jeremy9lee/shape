@@ -31,4 +31,13 @@ public class Rect extends Shape implements Drawable{
 	public double shapeArea() {
 		return width * height;
 	}
+
+	@Override
+	public void visible(boolean flag) {
+		if (flag == true) {
+			draw();
+		} else {
+			System.out.println("width = " + width + ", height=" + height + "]에 사각형을 그렸습니다.");
+		}
+	}
 }

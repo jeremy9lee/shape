@@ -22,4 +22,13 @@ public class Circle extends Shape implements Drawable{
 	public double shapeArea() {
 		return Math.PI*Math.pow(radius, 2);
 	}
+
+	@Override
+	public void visible(boolean flag) {
+		if (flag == true) {
+			draw();
+		} else {
+			System.out.println("반지름 = " + radius + "]인 원을 그렸습니다.");
+		}
+	}
 }
